@@ -1,18 +1,28 @@
 body{
     background-image: url(img/Decore.png);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 60%;
+    background-position: top right;
+    background-size: 48%;
 }
 header{
+    margin-left: 5px;
     display: flex;
     flex-direction: row;
-    padding: 35px 50px;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
 }
 
+.header__logo{
+    min-height: 60px;
+    min-width: 60px;
+    width: 6%;
+    height: 6%;
+}
 .top-nav{
-    width: 40%;
+    gap: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,8 +30,8 @@ header{
     margin: 0 10%;
 }
 header svg{
-    margin-right: 5%;
     margin-left: 5%;
+    align-items: center;
 }
 
 header button{
@@ -31,11 +41,11 @@ header button{
 }
 
 .sign-nav{
+    gap:5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 15%;
 
 }
 
