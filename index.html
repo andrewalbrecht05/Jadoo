@@ -9,29 +9,46 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img class="header__logo" src="img/Logo.svg" alt="">
-            
-        <ul class="top-nav">
-            <li class="top-nav__item">Destinations</li>
-            <li class="top-nav__item">Hotels</li>
-            <li class="top-nav__item">Flighs</li>
-            <li class="top-nav__item">Bookings</li>
-        </ul> 
+        <div class="container">
+            <img class="header__logo" src="img/Logo.svg" alt="">
+            <ul class="top-nav">
+                <li class="top-nav__item"><a href="">Destinations</a></li>
+                <li class="top-nav__item"><a href="">Hotels</a></li>
+                <li class="top-nav__item"><a href="">Flighs</a></li>
+                <li class="top-nav__item"><a href="">Booking</a></li>
+            </ul> 
 
-        <ul class="sign-nav">
-            <li class="sign-nav__item">Login</li>
-            <li class="sign-nav__item" id="sign-nav__sign-up-button">Sign up</li>
-            <li class="sign-nav__item">
-                <p style="margin-right:5px">EN</p>
-                <svg width="15" height="9" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.5 0.5L5 5L9.5 0.5" stroke="#212832"/>
-                </svg>
-                    
-            </li>
+            <ul class="sign-nav">
+                <li class="sign-nav__item"><a href="">Login</a></li>
+                <li class="sign-nav__item"><a href="">Sign up</a></li>
+                <li class="sign-nav__item">
+                    <p style="margin-right:5px">EN</p>
+                    <svg width="15" height="9" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 0.5L5 5L9.5 0.5" stroke="#212832"/>
+                    </svg>
+                    <ul class="sign-nav__item_lang-choose">
+                        <li>EN</li>
+                        <li>UA</li>
+                        <li>PL</li>
+                    </ul>
+                </li>
+                <li class="sign-nav__item">
+                    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+                    <label for="burger-toggle" class="burger-icon">
+                        <img src="img/icn menu .icn-xs.svg" alt="">
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <ul class="burger-menu" style="visibility: visible">
+            <li class="burger-menu__item"><a href="">Destinations</a></li>
+            <li class="burger-menu__item"><a href="">Hotels</a></li>
+            <li class="burger-menu__item"><a href="">Flighs</a></li>
+            <li class="burger-menu__item"><a href="">Booking</a></li>
         </ul>
     </header>
     <main>
@@ -49,14 +66,14 @@
                 </div>
             </div>
         </div>
-        <img src="img/traveller.png" alt="traveller">
+        <img src="img/traveller.pn" alt="traveller">
     </main>
     <div class="services">
         <p>Category</p>
         <h1>We offer best services</h1>
         <div class="services__categories">
             <div class="services__categories-item">
-                <img src="img/calculated weather.svg" alt="calculated weather">
+                <img src="img/calculated weather.sv" alt="calculated weather">
                 <p>Calculated Weather</p>
                 <p>Built Wicket longer
                     admire do barton 
@@ -64,21 +81,21 @@
                 </p>
             </div>
             <div class="services__categories-item">
-                <img src="img/best flights.svg" alt="best flights">
+                <img src="img/best flights.sv" alt="best flights">
                 <p>Best Flights</p>
                 <p>
                     Engrossed listening. Park gate sell they west hard for the.
                 </p>
             </div>
             <div class="services__categories-item">
-                <img src="img/local events.svg" alt="local events">
+                <img src="img/local events.sv" alt="local events">
                 <p>Local Events</p>
                 <p>
                     Barton vanity itself do in it. Preferd to men it engrossed listening. 
                 </p>
             </div>
             <div class="services__categories-item">
-                <img src="img/customization.svg" alt="customization">
+                <img src="img/customization.sv" alt="customization">
                 <p>Customization</p>
                 <p>We deliver outsourced
                     aviation services for
@@ -92,39 +109,43 @@
         <h1>Top Destinations</h1>
         <div class="destination__categories">
             <div class="destination__categories-item">
-                <img src="img/Rome.png" alt="Rome">
+                <img src="img/Rome.pn" alt="Rome">
                 <div class="destination__categories-item-text">
                     <p>Rome, Italy</p>
                     <p>$5,42k</p>
                 </div>
                 <div class="destination__categories-item-time">
-                    <img src="img/navigation.svg" alt="navigation">
+                    <img src="img/navigation.sv" alt="navigation">
                     <p>10 Days Trip</p>
                 </div>
             </div>
             <div class="destination__categories-item">
-                <img src="img/London.jpg" alt="London">
+                <img src="img/London.jp" alt="London">
                 <div class="destination__categories-item-text">
                     <p>London, UK</p>
                     <p>$4,2k</p>
                 </div>
                 <div class="destination__categories-item-time">
-                    <img src="img/navigation.svg" alt="navigation">
+                    <img src="img/navigation.sv" alt="navigation">
                     <p>12 Days Trip</p>
                 </div>
             </div>
             <div class="destination__categories-item">
-                <img src="img/Europe.png" alt="Full Europe">
+                <img src="img/Europe.pn" alt="Full Europe">
                 <div class="destination__categories-item-text">
                     <p>Full Europe</p>
                     <p>$15k</p>
                 </div>
                 <div class="destination__categories-item-time">
-                    <img src="img/navigation.svg" alt="navigation">
+                    <img src="img/navigation.sv" alt="navigation">
                     <p>28 Days Trip</p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
+{
+
+}
